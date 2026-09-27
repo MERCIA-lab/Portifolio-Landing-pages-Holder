@@ -3,54 +3,78 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Northstar Collective</title>
+  <meta name="theme-color" content="#ededed">
+  <title>git huds — Good ideas, built together</title>
   <link rel="stylesheet" href="index.css">
 </head>
 <body>
-  <div class="page-shell">
+  <main class="page-shell" id="top">
     <header class="site-header">
-      <nav class="site-nav" aria-label="Main navigation">
-        <a class="brand" href="#top" aria-label="Northstar Collective home"><span class="brand-mark">+</span> NORTHSTAR</a>
-        <a class="contact-button" href="mailto:hello@northstar.example">Contact</a>
+      <nav class="primary-nav" aria-label="Main navigation">
+        <a href="#projects">Projects <span aria-hidden="true">⌄</span></a>
+        <a href="#team">Team</a>
+        <a href="#about">About</a>
       </nav>
+      <a class="brand-mark" href="#top" aria-label="git huds home"><span>g</span></a>
+      <nav class="member-nav" aria-label="Member portfolios">
+        <a href="meek/meek.html">Meek</a>
+        <a href="amen/amen.html">Amen</a>
+        <a class="signup-link" href="severien/severien.html">Severien</a>
+      </nav>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open navigation"><span></span><span></span></button>
     </header>
 
-    <main id="top">
-      <section class="hero reveal" aria-labelledby="hero-title">
-        <div class="hero-copy">
-          <p class="eyebrow">Independent creative collective</p>
-          <h1 id="hero-title">We make digital work<br>that moves people.</h1>
-          <p class="hero-text">Three collaborators building clear, useful, and memorable experiences for the web.</p>
-          <a class="primary-button" href="#contact">Start a conversation</a>
-        </div>
-        <div class="hero-art" role="img" aria-label="Abstract black and white team artwork"><span>NS</span></div>
+    <div class="mobile-menu" id="mobile-menu" hidden>
+      <a href="#projects">Projects</a><a href="#team">Team</a><a href="#about">About</a>
+      <a href="meek/meek.html">Meek</a><a href="amen/amen.html">Amen</a><a href="severien/severien.html">Severien</a>
+    </div>
+
+    <section class="hero" aria-labelledby="hero-title">
+      <span class="ornament ornament-triangle" aria-hidden="true"></span>
+      <span class="ornament ornament-square" aria-hidden="true"></span>
+      <span class="ornament ornament-dot" aria-hidden="true"></span>
+      <span class="ornament ornament-ring" aria-hidden="true"></span>
+      <span class="ornament ornament-slash" aria-hidden="true"></span>
+      <span class="ornament ornament-dash" aria-hidden="true"></span>
+      <div class="hero-copy">
+        <p class="eyebrow">A small team with big ideas</p>
+        <h1 id="hero-title">Good ideas<br>deserve <span class="headline-highlight">to be built</span></h1>
+        <p class="hero-description">Three curious developers bringing design, code, and creative technology together to make the web more useful.</p>
+        <a class="button" href="#projects">Explore our work <span aria-hidden="true">↓</span></a>
+      </div>
+      <section class="steps" id="projects" aria-label="How we work">
+        <article class="step-card">
+          <span class="step-icon" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M5 8h22v16H5zM5 9l11 9L27 9"/></svg></span>
+          <h2>Imagine</h2>
+          <p>We bring different perspectives together and find the right idea to make real.</p>
+        </article>
+        <article class="step-card">
+          <span class="step-icon" aria-hidden="true"><svg viewBox="0 0 32 32"><circle cx="16" cy="16" r="11"/><path d="m11 16 3.5 3.5L21 13"/></svg></span>
+          <h2>Build</h2>
+          <p>From first sketch to working product, we make thoughtful things for the web.</p>
+        </article>
+        <article class="step-card">
+          <span class="step-icon" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M25 14a9 9 0 1 1-3-6.7M22 4v6h6"/><path d="M11 16h10"/></svg></span>
+          <h2>Grow</h2>
+          <p>We keep learning, sharing our work, and making each new idea better.</p>
+        </article>
       </section>
+    </section>
 
-      <section class="section team-section reveal" aria-labelledby="team-title">
-        <div class="section-intro"><p class="eyebrow">The people</p><h2 id="team-title">Meet the team</h2></div>
-        <div class="team-grid">
-          <article class="team-card"><div class="avatar avatar-one" role="img" aria-label="Abstract avatar for Meek">M</div><h3>Meek</h3><p>Front-end developer</p></article>
-          <article class="team-card"><div class="avatar avatar-two" role="img" aria-label="Abstract avatar for Amen">A</div><h3>Amen</h3><p>Designer and visual thinker</p></article>
-          <article class="team-card"><div class="avatar avatar-three" role="img" aria-label="Abstract avatar for Severien">S</div><h3>Severien</h3><p>Creative technologist</p></article>
-        </div>
-      </section>
-
-      <section class="section work-section reveal" aria-labelledby="work-title">
-        <div class="section-intro"><p class="eyebrow">Selected work</p><h2 id="work-title">A few highlights</h2></div>
-        <div class="work-grid">
-          <article class="work-card work-wide"><div class="work-image image-one" role="img" aria-label="Abstract project preview one"></div><h3>Interfaces with intent</h3></article>
-          <article class="work-card"><div class="work-image image-two" role="img" aria-label="Abstract project preview two"></div><h3>Ideas made visible</h3></article>
-          <article class="work-card"><div class="work-image image-three" role="img" aria-label="Abstract project preview three"></div><h3>Systems that connect</h3></article>
-        </div>
-      </section>
-
-      <section class="about-section reveal" aria-labelledby="about-title"><p class="eyebrow">Our approach</p><h2 id="about-title">Good work starts with paying attention.</h2><p>We bring different strengths to the same table: thoughtful design, careful code, and an honest curiosity about the people we are building for.</p></section>
-
-      <section class="contact-section reveal" id="contact" aria-labelledby="contact-title"><p class="eyebrow">Have a project in mind?</p><h2 id="contact-title">Let us make something useful.</h2><p>Tell us what you are working on and where you want to go next.</p><a class="primary-button" href="mailto:hello@northstar.example">hello@northstar.example</a></section>
-    </main>
-
-    <footer class="site-footer"><p>© 2024 Northstar Collective</p><div class="socials" aria-label="Social profiles"><span aria-label="Instagram">IG</span><span aria-label="LinkedIn">IN</span><span aria-label="Dribbble">DB</span></div></footer>
-  </div>
+    <section class="team-section" id="team" aria-labelledby="team-title">
+      <div class="section-heading" id="about">
+        <p class="eyebrow">Meet the people</p>
+        <h2 id="team-title">Three minds, one team.</h2>
+        <p>Different strengths, shared curiosity, and a love for building things that matter.</p>
+      </div>
+      <div class="team-grid">
+        <article class="team-card"><img src="assets/images/meek.jpeg" alt="Meek Dieu Merci" loading="lazy"><span><strong>Meek Dieu Merci</strong><small>AI / ML · Full-stack</small></span><a class="profile-link" href="meek/meek.html">View profile</a></article>
+        <article class="team-card"><span class="avatar-placeholder" aria-hidden="true">A</span><span><strong>Amen</strong><small>Web development · Technology</small></span><a class="profile-link" href="amen/amen.html">View profile</a></article>
+        <article class="team-card"><img src="assets/images/severien.jpeg" alt="Severien" loading="lazy"><span><strong>Severien</strong><small>Development · Creative technology</small></span><a class="profile-link" href="severien/severien.html">View profile</a></article>
+      </div>
+    </section>
+    <footer class="site-footer"><a class="footer-brand" href="#top">git huds</a><span>Thoughtful people, building together.</span><small>© 2026 git huds</small></footer>
+  </main>
   <script src="index.js"></script>
 </body>
 </html>

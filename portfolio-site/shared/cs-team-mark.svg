@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 72" fill="none" role="img" aria-labelledby="title">
+  <title id="title">CS Team three-ring branch emblem</title>
+  <g stroke="#171714" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Three rounded rings form the team mark. -->
+    <rect x="5" y="7" width="25" height="25" rx="10"/>
+    <rect x="42" y="7" width="25" height="25" rx="10"/>
+    <rect x="23.5" y="40" width="25" height="25" rx="10"/>
+    <!-- Angular polygon branches tie the rings together. -->
+    <path d="M30 19.5h5l3.5 6h3.5M18 32v5l9 5M54 32v5l-9 5"/>
+  </g>
+  <circle cx="36" cy="25.5" r="3" fill="#F3A516"/>
+  <circle cx="27" cy="42" r="3" fill="#F3A516"/>
+  <circle cx="45" cy="42" r="3" fill="#F3A516"/>
+</svg>
