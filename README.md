@@ -1,10 +1,10 @@
-# Team Portfolio Website
+Team Portfolio Website
 
 A collaborative portfolio for Meek, Amen, and Severien. The site is organized with one folder per page and uses plain HTML, CSS, and JavaScript.
 
-## Project structure
+Project structure
 
-```text
+
 portfolio-site/
 ├── index.html              # Homepage
 ├── index.css               # Homepage styles
@@ -22,11 +22,11 @@ portfolio-site/
 ├── severien/                # Severien's portfolio page and assets
 ├── shared/                  # Styles shared between pages
 └── assets/                  # Images, icons, and fonts
-```
+
 
 The Contact and Projects pages have been removed. The homepage remains at the root of `portfolio-site`; the About and not-found pages live in their own folders. Member portfolios are kept in each member's folder.
 
-## Technologies
+Technologies
 
 - HTML
 - CSS
