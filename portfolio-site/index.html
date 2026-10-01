@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+<<<<<<< Updated upstream
   <meta name="theme-color" content="#ededed">
   <title>git huds — Good ideas, built together</title>
   <link rel="stylesheet" href="index.css">
@@ -76,5 +77,65 @@
     <footer class="site-footer"><a class="footer-brand" href="#top">git huds</a><span>Thoughtful people, building together.</span><small>© 2026 git huds</small></footer>
   </main>
   <script src="index.js"></script>
+=======
+  <meta name="description" content="iMarked is an open portfolio directory. Discover independent creatives or add your portfolio to the index.">
+  <title>iMarked — Creative Portfolio Directory</title>
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="wordmark" href="index.html" aria-label="iMarked home"><span class="brand-mark" aria-hidden="true">iM</span><span class="brand-name">iMarked</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#add-portfolio">Start here</a>
+      <a href="about/index.html">About</a>
+      <a href="#directory">Directory</a>
+      <a class="nav-cta" href="#add-portfolio">Add your portfolio</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="live-dot"></span> AN OPEN DIRECTORY FOR CREATIVE WORK</p>
+        <h1 id="hero-title"><span class="hero-welcome">Welcome to</span><br>iMarked<span class="hero-period">.</span></h1>
+        <p class="hero-description">Discover independent creatives, explore their work, and make your own practice easier to find.</p>
+        <div class="hero-actions"><a class="button button-dark" href="#add-portfolio">Start your portfolio</a><a class="text-link" href="#how-it-works">Learn more</a></div>
+        <div class="hero-meta"><span>INDEPENDENT WORK</span><span>OPEN TO ALL DISCIPLINES</span></div>
+      </div>
+      <div class="hero-art" aria-hidden="true"><svg class="mountain-art" viewBox="0 0 900 360" preserveAspectRatio="xMidYMid meet"><defs><linearGradient id="fog" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#111" stop-opacity=".95"/><stop offset=".48" stop-color="#777" stop-opacity=".38"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient><linearGradient id="mist" x1="0" x2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#aaa" stop-opacity=".45"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient></defs><path d="M0 288 113 225l65 24 119-128 65 73 55-45 66 15 90-110 72 80 58-37 56 57 81-51 60 87v170H0Z" fill="url(#fog)"/><path d="m92 237 76 19 130-133 63 70 59-47 66 20 87-104 73 81 56-38 54 54 73-45" fill="none" stroke="#161616" stroke-width="2"/><path d="m298 123 25 17 16-8 20 23 18-4 17 22m166-59 15 19 17-7 21 24 20-5 20 17m87-25 19 15 20-6 21 20" fill="none" stroke="#fff" stroke-opacity=".82" stroke-width="3"/><path d="M0 280c147-49 218 43 345-8s221 30 325-12 153 19 230-12v112H0Z" fill="url(#mist)"/><path d="M0 308c111-26 202 21 313-4s211 16 328-12 163 12 259-13" fill="none" stroke="#aaa" stroke-opacity=".35"/></svg><span class="landscape-caption">A DIRECTORY FOR PEOPLE WHO MAKE THINGS</span></div>
+    </section>
+
+    <section class="how-section section-wrap" id="how-it-works" aria-labelledby="how-title"><div class="section-heading"><div><p class="eyebrow">A SIMPLE WAY TO BE DISCOVERED</p><h2 id="how-title">Start your journey<span class="heading-period">.</span></h2></div><p class="section-note">A useful starting point for creative connections.<br>Built to keep the focus on people and their work.</p></div><div class="steps"><article class="step"><span class="step-no">01</span><h3>Be inspired</h3><p>Explore independent portfolios, creative disciplines, and different ways of approaching the work.</p></article><article class="step"><span class="step-no">02</span><h3>Get connected</h3><p>Find people whose practice interests you and visit their portfolio to learn more.</p></article><article class="step"><span class="step-no">03</span><h3>Share your work</h3><p>Add a profile to this browser’s directory and make your own portfolio easier to find.</p></article></div></section>
+
+    <section class="directory section-wrap" id="directory" aria-labelledby="directory-title">
+      <div class="section-heading"><div><p class="eyebrow">THE PEOPLE BEHIND THE WORK</p><h2 id="directory-title">Find your people<span class="heading-period">.</span></h2></div><p class="section-note">Independent minds. Distinct practices.<br>One place to find your next collaborator.</p></div>
+      <div class="directory-toolbar"><label class="search-box"><span class="sr-only">Search portfolios</span><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Search people, disciplines, or skills" autocomplete="off"></label><label class="filter-label"><span class="sr-only">Filter by discipline</span><select id="discipline"><option value="">All disciplines</option><option>Design</option><option>Development</option><option>Photography</option><option>Writing</option><option>Art direction</option><option>Other</option></select></label><label class="filter-label sort-label"><span class="sr-only">Sort portfolios</span><select id="sort"><option value="featured">Featured first</option><option value="name">Name A–Z</option><option value="recent">Recently added</option></select></label></div>
+      <div class="directory-count"><span id="results-count" aria-live="polite"></span><span>SELECT A PROFILE TO EXPLORE</span></div>
+      <div class="portfolio-grid" id="portfolio-grid"></div>
+      <p class="empty-state" id="empty-state" hidden>No portfolios match that search. Try another name or discipline.</p>
+    </section>
+
+    <section class="join-section" id="add-portfolio" aria-labelledby="join-title">
+      <div class="join-intro"><p class="eyebrow">YOUR WORK BELONGS HERE</p><h2 id="join-title">Get started<br><span>today.</span></h2><p>Create a clear profile, link to your portfolio, and give people a simple way to discover what you do.</p><div class="join-values"><article><h3>Be discoverable</h3><p>Share your discipline, location, and introduction in one place.</p></article><article><h3>Keep it personal</h3><p>Link directly to your own work and let it speak for itself.</p></article><article><h3>Start simply</h3><p>No account is needed. Your profile is stored in this browser.</p></article></div></div>
+      <form id="portfolio-form" class="portfolio-form">
+        <div class="form-heading"><span class="form-logo" aria-hidden="true">iM</span><span>CREATE YOUR PROFILE</span></div>
+        <div class="form-row"><label for="name">Your name</label><input id="name" name="name" required maxlength="60" placeholder="e.g. Alex Morgan"></div>
+        <div class="form-row"><label for="title">Professional title</label><input id="title" name="title" required maxlength="80" placeholder="e.g. Independent product designer"></div>
+        <div class="form-row"><label for="form-discipline">Primary discipline</label><select id="form-discipline" name="discipline" required><option value="" disabled selected>Select a discipline</option><option>Design</option><option>Development</option><option>Photography</option><option>Writing</option><option>Art direction</option><option>Other</option></select></div>
+        <div class="form-row"><label for="location">Location</label><input id="location" name="location" required maxlength="60" placeholder="e.g. Kigali, Rwanda"></div>
+        <div class="form-row"><label for="bio">A short introduction</label><textarea id="bio" name="bio" required maxlength="220" rows="3" placeholder="Tell people what you do and what you care about."></textarea><span class="field-hint"><span id="bio-count">0</span> / 220</span></div>
+        <div class="form-row"><label for="website">Portfolio or website URL</label><input id="website" name="website" required type="url" placeholder="https://your-website.com"></div>
+        <button class="button button-light submit-button" type="submit">Add to the directory</button>
+        <p class="form-message" id="form-message" role="status"></p>
+        <p class="form-privacy">By adding a profile, you agree that the details above will appear in this browser’s directory. Nothing is sent to a server.</p>
+      </form>
+    </section>
+
+    <section class="closing-band"><span>AN OPEN SPACE FOR INDEPENDENT WORK</span><a href="#add-portfolio">Put your work out there</a></section>
+  </main>
+  <footer class="site-footer"><a class="wordmark" href="index.html"><span class="brand-mark" aria-hidden="true">iM</span><span class="brand-name">iMarked</span></a><span>INDEPENDENT WORK. SHARED HERE.</span><a href="#main">Back to top</a><span>© <span id="year"></span> iMARKED</span></footer>
+>>>>>>> Stashed changes
 </body>
 </html>

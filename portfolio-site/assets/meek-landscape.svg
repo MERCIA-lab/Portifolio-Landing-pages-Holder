@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 650" fill="none">
+  <defs>
+    <linearGradient id="mist" x1="480" x2="480" y1="0" y2="650" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#fff"/>
+      <stop offset="1" stop-color="#e9e9e9"/>
+    </linearGradient>
+    <linearGradient id="ridge" x1="160" x2="790" y1="120" y2="520" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#fff"/>
+      <stop offset=".5" stop-color="#d7d7d7"/>
+      <stop offset="1" stop-color="#f7f7f7"/>
+    </linearGradient>
+  </defs>
+  <rect width="960" height="650" rx="36" fill="url(#mist)"/>
+  <path d="M0 451 123 367l72 32 174-214 103 130 83-70 66 20 124-157 76 99 54-33 85 74v402H0V451Z" fill="url(#ridge)"/>
+  <path d="m105 379 90 20 174-214 103 130 83-70 66 20 124-157 76 99 54-33 85 74" stroke="#414141" stroke-linecap="round" stroke-linejoin="round" stroke-opacity=".72" stroke-width="4"/>
+  <path d="m369 198 25 13 13 31 25 3 14 19m268-126 27 21 9 25 26 7 17 22m74-56 22 18 8 18 27 10" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
+  <path d="M0 473c119-45 212 39 335-9s232 38 361-7 165 22 264-18v211H0V473Z" fill="#fff" fill-opacity=".7"/>
+  <path d="M0 519c125-27 207 25 339-10s221 27 350-8 171 18 271-14" stroke="#bcbcbc" stroke-linecap="round" stroke-opacity=".55" stroke-width="3"/>
+</svg>
