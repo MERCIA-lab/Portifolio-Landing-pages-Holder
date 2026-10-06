@@ -1,0 +1,31 @@
+/* Small corner radius across the site’s card and illustration surfaces. */
+body .button{border-radius:4px}
+.profile-card,.review-card,.profile-modal,.about-profile-grid>article{overflow:hidden;border-radius:5px}
+.profile-art,.feature-visual,.hero-art,.art-panel,.portfolio-art,.about-hero-art,.about-profile-art,.local-graphic,.contact-band,.about-final{border-radius:5px}
+.art-panel,.portfolio-art,.about-hero-art,.about-profile-art,.local-graphic{overflow:hidden}
+.avatar-photo{width:25px;height:25px;margin-left:-4px;border:2px solid var(--paper);border-radius:50%;object-fit:cover;object-position:center 35%}
+.hero-art .person-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero-art .hero-photo-meek{object-position:72% 37%;transform:scale(1.35)}
+.hero-art .hero-photo-amen{object-position:center 38%;transform:scale(1.05);transform-origin:center 38%}
+.hero-art .hero-photo-severien{object-position:center 16%;transform:scale(1.65);transform-origin:center 16%}
+.hero-art .art-panel{isolation:isolate}.hero-art .art-panel:after{position:absolute;z-index:0;inset:0;content:"";background:linear-gradient(180deg,rgba(0,0,0,.08),transparent 38%,rgba(0,0,0,.38));pointer-events:none}.hero-art .art-index,.hero-art .art-name{z-index:2;color:white}.hero-art .art-index{padding:4px 6px;background:rgba(25,27,24,.46)}
+.profile-art .profile-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}.profile-art .profile-index,.profile-art .profile-discipline{z-index:2;background:rgba(250,249,245,.78);padding:4px 6px}.photo-meek{object-position:72% 37%;transform:scale(1.3)}.photo-amen{object-position:center 38%;transform:scale(1.05);transform-origin:center 38%}.photo-severien{object-position:center 16%;transform:scale(1.6);transform-origin:center 16%}
+.proof-photo{width:28px;height:28px;border-radius:50%;object-fit:cover;object-position:center 35%}
+.feature-visual{isolation:isolate}.feature-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:72% 35%;transform:scale(1.28)}.feature-visual:after{position:absolute;z-index:0;inset:0;content:"";background:linear-gradient(90deg,rgba(23,25,21,.08),transparent 44%,rgba(23,25,21,.15));pointer-events:none}.feature-vertical,.feature-stamp{z-index:1}
+.review-photo{width:30px;height:30px;flex:0 0 30px;border-radius:50%;object-fit:cover;object-position:center 35%}
+.about-orbit{overflow:hidden;padding:0}.about-orbit img{width:100%;height:100%;object-fit:cover}.orbit-one img{object-position:72% 36%;transform:scale(1.25)}.orbit-two img{object-position:center 38%;transform:scale(1.05);transform-origin:center 38%}.orbit-three img{object-position:center 16%;transform:scale(1.7);transform-origin:center 16%}
+.about-profile-art{isolation:isolate}.about-profile-art>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform var(--ease)}.about-profile-art:hover>img{transform:scale(1.04)}.about-profile-art>span{z-index:2;padding:4px 6px;background:rgba(250,249,245,.75)}.meek-art>img{object-position:72% 35%;transform:scale(1.28)}.amen-art>img{object-position:center 38%;transform:scale(1.05);transform-origin:center 38%}.severien-art>img{object-position:center 16%;transform:scale(1.65);transform-origin:center 16%}
+.portfolio-art{isolation:isolate}.portfolio-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}.meek-page .portfolio-photo{object-position:72% 35%;transform:scale(1.3)}.amen-page .portfolio-photo{object-position:center 38%;transform:scale(1.04);transform-origin:center 38%}.severien-page .portfolio-photo{object-position:center 16%;transform:scale(1.65);transform-origin:center 16%}.portfolio-art:after{position:absolute;z-index:0;inset:0;content:"";background:linear-gradient(180deg,rgba(0,0,0,.1),transparent 48%,rgba(0,0,0,.3));pointer-events:none}.portfolio-art .art-label,.portfolio-art .art-foot{z-index:2;padding:4px 6px;background:rgba(246,245,241,.76)}
+*{border-radius:4px}
+body .filter-chip,body .tag-row span,body .profile-discipline{border-radius:4px}
+body .profile-art .profile-discipline{text-transform:none;font:500 10px var(--sans);letter-spacing:0}
+.eyebrow,.art-index,.art-top,.art-caption,.art-label,.art-foot,.feature-vertical,.feature-stamp,.profile-index,.proof-label,.proof-note,.editorial-note,.portfolio-status,.portfolio-section-head>span,.nf-foot,.footer-label,.about-side-label,.about-profile-art>span,.discipline-grid article>span,.card-bottom>span{display:none!important}
+.project-row{grid-template-columns:1fr}
+.art-grid{margin-top:8px}
+.about-intro,.about-block{grid-template-columns:1fr}
+.skills-inner{grid-template-columns:.8fr 1.2fr}
+.philosophy-section{grid-template-columns:1fr 1fr}
+.proof>a{width:auto;flex:1}
+.avatar-meek,.proof-meek,.review-meek{object-position:72% 38%}
+.avatar-amen,.proof-amen,.review-amen{object-position:center 38%;transform:scale(1.05)}
+.avatar-severien,.proof-severien,.review-severien{object-position:center 16%;transform:scale(1.45);transform-origin:center 16%}
