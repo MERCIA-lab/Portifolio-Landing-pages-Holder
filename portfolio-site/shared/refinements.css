@@ -29,3 +29,33 @@ body .profile-art .profile-discipline{text-transform:none;font:500 10px var(--sa
 .avatar-meek,.proof-meek,.review-meek{object-position:72% 38%}
 .avatar-amen,.proof-amen,.review-amen{object-position:center 38%;transform:scale(1.05)}
 .avatar-severien,.proof-severien,.review-severien{object-position:center 16%;transform:scale(1.45);transform-origin:center 16%}
+
+/* Give the directory portraits a clear, circular profile treatment. */
+.profile-card,.review-card,.profile-modal,.about-profile-grid>article{border-radius:14px}
+.profile-art,.feature-visual,.hero-art,.art-panel,.portfolio-art,.about-hero-art,.about-profile-art,.local-graphic,.contact-band,.about-final{border-radius:14px}
+.profile-art{display:grid;place-items:center;isolation:isolate;background-image:radial-gradient(circle at center,transparent 0 82px,rgba(54,64,45,.12) 83px 84px,transparent 85px)}
+.profile-art .profile-photo,.profile-art .portrait-letter{position:relative;inset:auto;width:154px;height:154px;border:5px solid rgba(250,249,245,.85);border-radius:50%;box-shadow:0 8px 28px rgba(31,34,27,.12)}
+.profile-art .profile-photo{object-fit:cover}
+.profile-art .portrait-letter{display:grid;place-items:center;right:auto;bottom:auto;font-size:110px;line-height:1;color:#758365}
+.profile-card:nth-child(3n+2) .profile-art .portrait-letter{color:#a77f65}
+.profile-card:nth-child(3n+3) .profile-art .portrait-letter{color:#728482}
+.profile-art .profile-discipline{right:12px;top:auto;bottom:12px;border:1px solid rgba(32,33,31,.12);border-radius:999px!important;background:rgba(250,249,245,.9);padding:6px 10px}
+.profile-info{padding:20px 20px 18px}
+
+/* Let each portfolio hero meet the viewport edge, while its content follows the site grid. */
+.portfolio-page .portfolio-hero.container{width:100%;max-width:none;padding:86px max(48px,calc((100vw - 1240px)/2)) 90px;background:linear-gradient(115deg,#eeeee8 0%,var(--paper) 61%)}
+.portfolio-page .portfolio-hero h1{max-width:760px}
+.portfolio-page .portfolio-art{border-radius:18px;box-shadow:0 20px 55px rgba(32,33,31,.12)}
+.portfolio-page .about-block,.portfolio-page .work-section,.portfolio-page .experience-section,.portfolio-page .education,.profile-footer{max-width:1240px}
+.portfolio-page .about-block.container,.portfolio-page .work-section.container,.portfolio-page .experience-section.container,.portfolio-page .education.container,.portfolio-page .profile-footer.container{width:min(1240px,calc(100% - 96px));margin-inline:auto}
+.portfolio-page .project-row{display:grid;grid-template-columns:minmax(0,1fr);width:100%;padding-block:27px;border-top-color:#d4d5cd}
+.portfolio-page .project-row>div{min-width:0;width:100%}
+.portfolio-page .skills-block{border-block:1px solid #d9dbd2}
+.portfolio-page .contact-band{border-radius:16px}
+@media(max-width:760px){
+  .portfolio-page .portfolio-hero.container{padding:56px 20px 55px}
+  .portfolio-page .portfolio-art{border-radius:14px}
+  .portfolio-page .about-block.container,.portfolio-page .work-section.container,.portfolio-page .experience-section.container,.portfolio-page .education.container,.portfolio-page .profile-footer.container{width:calc(100% - 40px)}
+  .profile-art .profile-photo,.profile-art .portrait-letter{width:142px;height:142px}
+  .profile-art .portrait-letter{font-size:100px}
+}
